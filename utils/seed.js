@@ -18,7 +18,7 @@ console.log(connection);
 connection.once("open", async () => {
   console.log("connected");
 
-  // Drop existing students
+  // Drop existing table
   await User.deleteMany({});
 
   // Adds seed data to database
