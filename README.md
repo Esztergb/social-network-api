@@ -1,6 +1,7 @@
 # <span style="color:gold">Social Network API</span>
  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+ [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
@@ -26,9 +27,9 @@ SO THAT my website can handle large amounts of unstructured data
 This is an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. 
 
 
-![Example screenshot]()
+![Example screenshot](./utils/images/Screenshot.png)
 
-![Demo of routes being tested in Insomnia.]()
+[Demo of routes being tested in Insomnia.](https://drive.google.com/file/d/1YXWGvw6dyqfPt_JwfRS0pNU46xFoMNL3/view)
 
 ## Table of Contents
 * [Installation](#installation)

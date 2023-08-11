@@ -31,9 +31,10 @@ module.exports = {
   async createThought(req, res) {
     try {
       const thought = await Thought.create(req.body);
-
+console.log(thought)
       const user = await User.findByIdAndUpdate(
-        req.body.userId, //{ _id: req.body.thoughtId }, whats the difference between this and { _id: req.params.thoughtId },
+         req.body.userID, //{ _id: req.body.thoughtId }, whats the difference between this and 
+        // { _id: req.params.thoughtId },
         { $addToSet: { thoughts: thought._id } },
         { runValidators: true, new: true }
       );

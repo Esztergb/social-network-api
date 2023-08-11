@@ -1,6 +1,33 @@
 //Imports
 const { Schema, model } = require("mongoose");
-const reactionSchema = require("./Reaction");
+// const reactionSchema = require("./Reaction");
+
+const reactionSchema = new Schema(
+  {
+    // reactionId: {
+    //   type: Schema.Types.ObjectId,
+    //   default: () => new Types.ObjectId(),
+    // },
+    reactionBody: {
+      type: String,
+      required: true,
+      maxlength: 280,
+    },
+    username: {
+      type: String,
+      required: true,
+    },
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
+  }
+  // {
+  //   toJSON: {
+  //     getters: true, //Getters allow you to define a function that transforms the raw value of a schema field before it is returned from the database. This can be useful for formatting, parsing, or encrypting data stored in MongoDB.
+  //   },
+  // }
+);
 
 //Thought Schema based on challange README instructions
 
@@ -25,7 +52,7 @@ const thoughtSchema = new Schema(
   {
     toJSON: {
       virtuals: true,
-      getters: true,
+      // getters: true,
     },
     id: false,
   }

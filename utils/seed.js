@@ -6,8 +6,8 @@ const { User, Thought, Reaction } = require("../models");
 // Seed data
 const users = [
   {
-    username: "Ryan",
-    email: "ryan@gmail.com",
+    username: "Zoe",
+    email: "zoe@gmail.com",
     thought: [],
   },
 ];
